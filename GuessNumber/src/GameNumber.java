@@ -12,6 +12,21 @@ public class GameNumber {
             System.out.println(" You still have " +  i +  " choices left,choose again: ");
             int guess = scane.nextInt();
             System.out.println(guess);
+            if( randomNumber > guess) {
+                System.out.println(" Larger than that ");
+            }
+                if (randomNumber < guess ){
+                    System.out.println(" Smaller than that");
+                }
+                if (randomNumber == guess){
+                    System.out.println("You won !");
+                    break;
+                }
+                if ( randomNumber != guess && i == 1){
+                    System.out.println(" You lost");
+                    break;
+                }
+            }
         }
     }
-}
+
